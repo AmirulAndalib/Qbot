@@ -11,10 +11,10 @@ while True:
         'Reminder - Drink Water, Sir', 
         title='Qbot', 
         open='https://ufund-me.github.io/',
-        # appIcon='https://raw.githubusercontent.com/UFund-Me/Qbot/main/gui/imgs/UFund.png',
+        # appIcon='https://raw.githubusercontent.com/UFund-Me/Qbot/main/qbot/gui/imgs/UFund.png',
         # appIcon='https://ufund-me.github.io/img/UFund.png',
         # appIcon='https://ufund-me.github.io/img/logo.ico',
-        appIcon='./gui/imgs/logo.ico'
+        appIcon='./qbot/gui/imgs/logo.ico'
     )
     Notifier.notify(
         "Notification from %s" % __file__,
@@ -22,7 +22,7 @@ while True:
         open='https://github.com/SeTeM/pync',
         appIcon='https://ufund-me.github.io/img/UFund.png'
     )
-    os.system("afplay ./qbot/sounds/bell.wav")
+    os.system("afplay ./qbot/asserts/statics/sounds/bell.wav")
     time.sleep(2)
 
     # Notifier.notify(

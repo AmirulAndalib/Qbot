@@ -41,12 +41,12 @@ from utils.larkbot import LarkBot
 import pync
 
 top_path = os.path.dirname(os.path.abspath(sys.argv[0]))
-sounds_file = os.path.join(top_path, "./qbot/sounds/bell.wav")
+sounds_file = os.path.join(top_path, "./qbot/asserts/statics/sounds/bell.wav")
 
 def send_signal_sounds(type="buy"):
     if type == "buy":
         # if linux
-        # os.system('play ./qbot/sounds/alert-bells.wav')
+        # os.system('play ./qbot/asserts/statics/sounds/alert-bells.wav')
         # if MacOs
         os.system(f"afplay {sounds_file}")
     elif type == "sell":
@@ -57,7 +57,7 @@ def send_signal_message_screen(symbol, price, type=default):
             f'{symbol}当前价格为{price}',
             title=f'Qbot - {symbol}{type}',
             open="https://ufund-me.github.io/",
-            appIcon="./gui/imgs/logo.ico",
+            appIcon="./qbot/gui/imgs/logo.ico",
         )
 
 
